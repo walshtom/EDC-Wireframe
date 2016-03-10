@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html la="en">
+
+<head>
+<title>Explorers Dive Club</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/boat_dives.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.gomap-1.3.2.min.js"></script>
+<script>
+$(document).ready(function() {
+$('#map').goMap({
+    latitude : 40.101923,
+    longitude : -74.046476,
+    zoom : 14,
+    scaleControl : true,
+    maptype : 'MAP'
+}); // end goMap
+
+$.goMap.createMarker({  
+	   latitude : 40.101923,
+	   longitude :  -74.046476,
+	   title : 'Gypsy Blood',
+	   html : {
+	     content : '<p>Gypsy Blood</p>',
+		 popup : true   
+	   }
+}); // end createMarker
+}); // end ready
+</script>
+</head>
+
+<body>
+<div id="layout">
+<header>
+
+<img class="top" src="gifs/EDC logo title.gif" alt="dive club logo" border="0" align="bottom" width="600" height="113"/>
+<a href="index.html" class="button">Home</a>
+</header>	
+
+
+<h1>2015 New Jersey Wreck Diving Schedule<br>aboard</h1>
+<br>
+<img src="gifs/GypsyBanner.gif" alt="Gypsy Blood logo" border="0" width="1000" height="184"/>
+<br><br>
+
+
+	<div id="leftCol">
+	<h2>Saturday, July 11, 2015 <a href="http://njscuba.net/sites/site_stolt_dagali.php">Stolt</a></h2>
+	<h2>Saturday, August 1, 2015 <a href="http://njscuba.net/reefs/site_nj03sr_uss_algol.php">Algol</a></h2>
+	<h2>Saturday, August 29, 2015 <a href="http://njscuba.net/sites/site_gulf_trade.php">Gulf Trade</a></h2>
+	<h2>Saturday, September 26, 2015 <a href="http://njscuba.net/sites/site_maurice_tracy.php">Maurice Tracey</a></h2>    
+	</div>
+
+	<div id="rightCol">Dive destinations are at the discretion<br>of the Captain and may be changed<br>due to weather or other considerations.
+	</div>
+	
+<br id="clear">
+
+<p id="center">
+<!--You must have a full current boat deposit, signed <a href="forms/BoatPolicy.pdf">boat policy form</a> on file and paid club membership dues. -->
+Sign up sheets will be available at all the club meetings or email Keith or Melissa Bellamy at <a href="mailto:info@explorersdiveclub.org">info@explorersdiveclub.org</a> to sign up for these dives. Explorers Dive Club discounted price is $85.00 per diver for two tank dives.</p><br>
+<p id="center">Additional boat trips may be added to the schedule if there is sufficient interest.</p>
+
+<br><br>
+
+	<div id="left">	
+		<p>All dives are aboard the Gypsy Blood:</p>
+		<p id="indent">Southside Marina<br>311 Channel Drive<br>Point Pleasant, NJ</p>
+		<p>Please arrive by 6:30AM to allow time to load and board the boat for a prompt<br>7:00AM departure.</p>
+	<br>
+		<p>Visit the <a href="http://www.gypsyblooddive.com">Gypsy Blood's website</a> for additional policies, safety information and marina details.</p>
+        <br>
+        <br>
+        <br>
+        <br>        
+        <h2 id="weather"><a href="http://www.ndbc.noaa.gov/station_page.php?station=44025">Weather</a></h2>
+	</div>
+	
+	<div id="map">
+	</div>
+	
+
+	
+<br id="clear">
+
+
+
+<div id="line"></div>
+<footer>Copyright &copy; 2015 Explorers Dive Club.  All rights reserved.<br>
+For corrections or additions to this page please email: <a href="mailto:webmaster@explorersdiveclub.org">webmaster@explorersdiveclub.org</a>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
