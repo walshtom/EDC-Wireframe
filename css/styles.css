@@ -1,7 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600italic|Cantata+One);
+
+
 body {
   margin-bottom: 100px;
 }
 
+header	{
+  height: 180px;
+}	
+
+header img	{
+  margin: 10px 0 30px 30px;
+}
+
+h1	{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3	{
+  font-family: 'Cantata One', serif;
+  font-style: italic;
+}	
+
+#left	{
+  float: left;	
+}
+
+#right	{
+  margin-left: 200px;	
+}	
+
+#shift_h1	{
+  margin-left: 150px;
+}	
+
+#shift_h3	{
+  margin-left: 350px;
+}	
+
+nav	{
+  margin-top: 180px;	
+}	
 
 .footer {
   position: absolute;
