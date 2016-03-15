@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600italic|Cantata+One);
 
-
 body {
   margin-bottom: 100px;
 }
@@ -10,16 +9,19 @@ header	{
 }	
 
 header img	{
-  margin: 10px 0 30px 30px;
+  margin: 10px 0 0 5px;
+  border: green solid 1px;
 }
 
 h1	{
   font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
 }
 
 h3	{
   font-family: 'Cantata One', serif;
   font-style: italic;
+  margin-top: 10px;
 }	
 
 #left	{
@@ -27,16 +29,29 @@ h3	{
 }
 
 #right	{
-  margin-left: 200px;	
+  width: calc(100% - 160px);	
+  height: 123px;
+  float: left;	
+  border: green solid 1px;	
 }	
 
-#shift_h1	{
-  margin-left: 150px;
+#shift1	{
+  width: calc(100% - 160px);	
+  float: left;
+  margin-left: 10%;
+}
+
+#shift2	{
+  width: calc(100% - 160px);	
+  float: left;	
+  margin-left: 30%
 }	
 
-#shift_h3	{
-  margin-left: 350px;
-}	
+#shift3	{
+  width: calc(100% - 160px);	
+  float: left;
+  margin-left: 55%;
+}
 
 nav	{
   margin-top: 180px;	
@@ -50,8 +65,47 @@ nav	{
   background-color: #f5f5f5;
 }
 
+#short	{
+border-color: red;
+width: 768px;
+}	
+
+#med	{
+border-color: green;
+width: 992px;
+}
+
+#wide	{
+border-color: blue;
+width: 1200px;
+}
+
 @media (max-width: 767px) {
-	h3	{
+	#shift1	{
+	  margin-left: 10px; 	
+	}	
+
+	#shift1	{
+	  margin-left: 25px;  	
+	}	
+	
+	#shift3	{
 	  display: none;
 	}	
-}	
+}
+
+@media (max-width: 615px) {
+	#shift1	{
+	  margin-top: 10px;
+	  margin-left: 10px; 	
+	}	
+
+	#shift2	{
+	  margin: 0;
+	  text-align: center;
+	}	
+	
+	#shift3, #welcome {
+	  display: none;
+	}	
+}
