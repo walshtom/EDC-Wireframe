@@ -10,7 +10,6 @@ header	{
 
 header img	{
   margin: 10px 0 0 5px;
-  border: green solid 1px;
 }
 
 h1	{
@@ -32,7 +31,6 @@ h3	{
   width: calc(100% - 160px);	
   height: 123px;
   float: left;	
-  border: green solid 1px;	
 }	
 
 #shift1	{
@@ -54,7 +52,7 @@ h3	{
 }
 
 nav	{
-  margin-top: 180px;	
+  margin-top: 125px;		
 }	
 
 .footer {
@@ -85,8 +83,9 @@ width: 1200px;
 	  margin-left: 10px; 	
 	}	
 
-	#shift1	{
-	  margin-left: 25px;  	
+	#shift2	{
+	  margin: 0;	
+	  text-align: center;  	
 	}	
 	
 	#shift3	{
@@ -101,8 +100,9 @@ width: 1200px;
 	}	
 
 	#shift2	{
-	  margin: 0;
+	  margin-left: 10px;	
 	  text-align: center;
+	  break-inside: avoid-column;
 	}	
 	
 	#shift3, #welcome {
