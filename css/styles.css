@@ -4,6 +4,10 @@ body {
   margin-bottom: 100px;
 }
 
+#page {
+background-color: yellow;	
+}	
+
 header	{
   height: 180px;
 }	
@@ -77,6 +81,19 @@ width: 992px;
 border-color: blue;
 width: 1200px;
 }
+
+@media (min-width: 1025px)	{
+	#page	{
+	  margin-left: 100px;
+	  margin-right: 100px;	  
+	}
+	
+	navbar	{
+	  background-color: blue;	
+	  margin-left: 100px;
+	  margin-right: 100px;	
+	}
+}	
 
 @media (max-width: 767px) {
 	#shift1	{
