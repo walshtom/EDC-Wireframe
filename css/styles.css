@@ -2,10 +2,11 @@
 
 body {
   margin-bottom: 100px;
+  background-image: url(../img/gradient.jpg);
 }
 
 #page {
-background-color: yellow;	
+background-color: #FBFBF3;	
 }	
 
 header	{
@@ -24,7 +25,8 @@ h1	{
 h3	{
   font-family: 'Cantata One', serif;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }	
 
 #left	{
@@ -38,21 +40,19 @@ h3	{
 }	
 
 #shift1	{
-  width: calc(100% - 160px);	
+  margin-top: 10px;	
+  width: 100%;		
   float: left;
-  margin-left: 10%;
 }
 
 #shift2	{
-  width: calc(100% - 160px);	
+  width: 100%;	
   float: left;	
-  margin-left: 30%
 }	
 
 #shift3	{
-  width: calc(100% - 160px);	
+  width: 100%;		
   float: left;
-  margin-left: 55%;
 }
 
 nav	{
@@ -67,55 +67,37 @@ nav	{
   background-color: #f5f5f5;
 }
 
-#very_short	{
-  border-color: brown;
-  width: 480px;
-}	
-
-#short	{
-  border-color: red;
-  width: 768px;
-}	
-
-#med	{
-  border-color: green;
-  width: 992px;
-}
-
-#wide	{
-  border-color: blue;
-  width: 1200px;
-}	
 
 /* ============= *
  * Media Queries *
  * ============= */
 
 /* Extra Small Devices, Phones */ 
-@media(max-width: 480px) {
-	#welcome	{
-	  display: none;
-	}	
-
-	#shift2	{
-	  margin-left: 10px;	
-	  text-align: center;
+@media screen and (max-width: 480px) {	
+	#shift1, #shift3	{
+	  visibility: hidden;
 	}	
 	
-	#shift3, #welcome {
-	  display: none;
+	h1	{
+	position: absolute;
+	top: 10px;
+	left: 131px;
+	}	
+	
+	#shift2	{		
+	  text-align: left;
 	}	
 }
-}
+
 
 /* Small Devices, Tablets */
-@media (min-width: 480.1px) and (max-width: 768px) {
+@media screen and (min-width: 480.1px) {	
 	#welcome	{
-	  display: none;	
+	  visibility: hidden;	
 	}	
 	
 	#shift1	{
-	  margin-left: 10px; 	
+	  visibility: visible;	
 	}	
 
 	#shift2	{
@@ -124,30 +106,49 @@ nav	{
 	}	
 	
 	#shift3	{
-	  color: blue;
+	  visibility: hidden;	
 	}	
 }
 
 /* Medium Screens  */
-@media(min-width: 768.1px) and (max-width: 992px) {
-	navbar	{
-	  margin-left: 5%;
-	  margin-right: 5%;	
-	}
+@media screen and (min-width: 768.1px) {
+	#welcome	{
+	  visibility: visible;	
+	}		
 	
-	.footer_custom	{
-	  margin-right: 5%;	
+	#shift1	{
+  	  visibility: visible;			
 	}	
+
+	#shift2	{
+	  text-align: center;  	
+	}	
+	
+	#shift3	{
+	  visibility: visible;
+	  text-align: right;
+	}		
 }
 
 /* Large Screens */
-@media(min-width: 992.1px) {	
-	#page	{
+@media screen and (min-width: 992.1px) {	
+	#page	{	
 	  width: 80%;	
 	  margin-left: 10%;
 	  margin-right: 10%;	  
 	}
 
+	#shift1	{
+	}	
+
+	#shift2	{
+	  text-align: center;  	
+	}	
+	
+	#shift3	{
+	  visibiility: visible;
+	}	
+	
 	.navbar	{
 	  width: 80%;	
 	  margin-left: 10%;
@@ -155,7 +156,7 @@ nav	{
     }
 
 	.footer_custom	{
-	  width: 80%;	
+	  width: 80%;
 	  margin-right: 10%;
 	}	
 }
