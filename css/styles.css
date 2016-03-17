@@ -2,10 +2,11 @@
 
 body {
   margin-bottom: 100px;
+  background-image: url(../img/gradient.jpg);
 }
 
 #page {
-background-color: yellow;	
+background-color: #FBFBF3;	
 }	
 
 header	{
@@ -24,7 +25,8 @@ h1	{
 h3	{
   font-family: 'Cantata One', serif;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }	
 
 #left	{
@@ -38,21 +40,19 @@ h3	{
 }	
 
 #shift1	{
-  width: calc(100% - 160px);	
+  margin-top: 10px;	
+  width: 100%;		
   float: left;
-  margin-left: 10%;
 }
 
 #shift2	{
-  width: calc(100% - 160px);	
+  width: 100%;	
   float: left;	
-  margin-left: 30%
 }	
 
 #shift3	{
-  width: calc(100% - 160px);	
+  width: 100%;		
   float: left;
-  margin-left: 55%;
 }
 
 nav	{
@@ -67,37 +67,37 @@ nav	{
   background-color: #f5f5f5;
 }
 
-#short	{
-border-color: red;
-width: 768px;
-}	
 
-#med	{
-border-color: green;
-width: 992px;
-}
+/* ============= *
+ * Media Queries *
+ * ============= */
 
-#wide	{
-border-color: blue;
-width: 1200px;
-}
-
-@media (min-width: 1025px)	{
-	#page	{
-	  margin-left: 100px;
-	  margin-right: 100px;	  
-	}
+/* Extra Small Devices, Phones */ 
+@media screen and (max-width: 480px) {	
+	#shift1, #shift3	{
+	  visibility: hidden;
+	}	
 	
-	navbar	{
-	  background-color: blue;	
-	  margin-left: 100px;
-	  margin-right: 100px;	
-	}
-}	
+	h1	{
+	position: absolute;
+	top: 10px;
+	left: 131px;
+	}	
+	
+	#shift2	{		
+	  text-align: left;
+	}	
+}
 
-@media (max-width: 767px) {
+
+/* Small Devices, Tablets */
+@media screen and (min-width: 480.1px) {	
+	#welcome	{
+	  visibility: hidden;	
+	}	
+	
 	#shift1	{
-	  margin-left: 10px; 	
+	  visibility: visible;	
 	}	
 
 	#shift2	{
@@ -106,23 +106,77 @@ width: 1200px;
 	}	
 	
 	#shift3	{
-	  display: none;
+	  visibility: hidden;	
 	}	
 }
 
-@media (max-width: 615px) {
+/* Medium Screens  */
+@media screen and (min-width: 768.1px) {
+	#welcome	{
+	  visibility: visible;	
+	}		
+	
 	#shift1	{
-	  margin-top: 10px;
-	  margin-left: 10px; 	
+  	  visibility: visible;			
 	}	
 
 	#shift2	{
-	  margin-left: 10px;	
-	  text-align: center;
-	  break-inside: avoid-column;
+	  text-align: center;  	
 	}	
 	
-	#shift3, #welcome {
-	  display: none;
+	#shift3	{
+	  visibility: visible;
+	  text-align: right;
+	}		
+}
+
+/* Large Screens */
+@media screen and (min-width: 992.1px) {	
+	#page	{	
+	  width: 80%;	
+	  margin-left: 10%;
+	  margin-right: 10%;	  
+	}
+
+	#shift1	{
+	}	
+
+	#shift2	{
+	  text-align: center;  	
+	}	
+	
+	#shift3	{
+	  visibiility: visible;
+	}	
+	
+	.navbar	{
+	  width: 80%;	
+	  margin-left: 10%;
+	  margin-right: 10%;
+    }
+
+	.footer_custom	{
+	  width: 80%;
+	  margin-right: 10%;
 	}	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
