@@ -176,7 +176,11 @@ footer a[href^="mailto:"]	{
 	#shift3	{
 	  visibility: visible;
 	  text-align: right;
-	}		
+	}	
+
+	.container	{
+	width: 750px;
+	}
 }
 
 /* Large Screens */
@@ -190,6 +194,10 @@ footer a[href^="mailto:"]	{
 	#shift1	{
 	}	
 
+	.container	{
+	width: 970px;
+	}
+	
 	#shift2	{
 	  text-align: center;  	
 	}	
@@ -203,15 +211,14 @@ footer a[href^="mailto:"]	{
 	  margin-left: 10%;
 	  margin-right: 10%;
     }
-
-/*	.footer_custom	{
-	  width: 80%;
-	  margin-right: 10%;
-	}	*/
 }
 
-
-
+/* Extra Large Screens */
+@media screen and (min-width: 1200.1px) {	
+	.container	{
+	width: 1170px;	
+	}	
+}
 
 
 
