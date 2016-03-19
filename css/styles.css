@@ -93,6 +93,12 @@ nav	{
   height: 293px;
 }
 
+
+iframe	{
+  width: 570px;	
+  margin: 0 auto;	
+}
+
 /* =================== *
  * FOOTER DECLARATIONS *
  * =================== */
