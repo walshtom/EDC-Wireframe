@@ -104,7 +104,7 @@
 	<!-- End of navbar -->
 
     <!-- Carousel  -->
-	<div >
+	<div>
     <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#homePageCarousel" data-slide-to="0" class="active"></li>
@@ -150,25 +150,72 @@
 		  
         </div>		
       </div>
-<!--      <a class="left carousel-control" href="homePageCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="homePageCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
     </div>
 	</div><!-- end of carousel -->	
 	
-	<div>More stuff</div>
+	<div class="container marketing">
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h3 class="featurette-heading">Join us at our next meeting!</h3>
+          <p class="lead">Club meetings are held on the 2nd Tuesday of the month at 7:30 pm at the <a href="http://spaininn.net/spaininn/">Spain Inn</a> in Piscataway from April through October. Our next meeting is Tuesday April 12th, 2016. The program for the evening will feature the diving at Raja Ampat in Indonesia as an enticing preview of the Dive Club's proposed trip there in 2017.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="img/raja_ampat.jpg" height="212" width="400" alt="Raja Ampat map">
+        </div>
+      </div>  <!-- end featurette --> 
 
 
-	<footer class="footer footer_custom">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Who we are</h2>
+          <p>We are a group of central New Jersey recreational divers representing all ages, certifications, diving interests and levels of experience. Need a dive buddy? Join the club!</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Activities</h2>
+          <p>We organize shore dives, boat dives, picnics, dive vacations, an annual rafting trip and other social events. Please check out our calendar of activities.</p>
+		  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#calendarModal">
+  Calendar
+</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Volunteer Efforts</h2>
+          <p>Explorers Dive Club members provide volunteer support for visitor registration at the annual <a href="http://www.beneaththesea.org/">Beneath the Sea</a> consumer and dive travel expo. We participate in beach cleanups and other activities to support the communities where we live.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->	  	
+	</div>
+
+<div id="calendarModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Explorers Dive Club Calendar</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/calendar/embed?height=300&amp;wkst=1&amp;hl=en&amp;bgcolor=%2333ccff&amp;src=br7gromsi3lrfb18ilr3f1t2o8%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="570" height="380" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+	<footer class="footer">
 	  <div class="container">
-		<a href="#">Privacy Policy</a>
+		<button type="button" class="btn btn-default" data-toggle="popover"
+		title="Explorers Dive Club Privacy Policy"
+		data-content="We respect your privacy and the club will never share your Email address with any third party.">Privacy Policy</button>
+		
+		
+		
+		
+		
 		<p class="text-muted">Copyright &copy; 2016 Explorers Dive Club  All rights reserved.</p>
-		<p>For suggestions or additions to this site please contact: &nbsp;&nbsp;<a href="mailto:webmaster@explorersdiveclub.org">webmaster@explorersdiveclub.org</a></p>
+		<p>For suggestions for this site please contact: &nbsp;&nbsp;<a href="mailto:webmaster@explorersdiveclub.org">webmaster@explorersdiveclub.org</a></p>
+		
 	  </div>
 	</footer>
 
@@ -181,6 +228,13 @@
 		<script src="js/script.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
+		<script>
+		$(document).ready(function() {
+		  $(function () {
+		    $('[data-toggle="popover"]').popover();
+		  });
+		});
+		</script>
 	</div> <!-- end of page -->
 </body>
 </html>
