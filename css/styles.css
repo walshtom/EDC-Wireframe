@@ -107,12 +107,12 @@ iframe	{
  * FOOTER DECLARATIONS *
  * =================== */
 
-.footer {
+/* .footer {
   margin-top: 20px;
   width: 100%;
-  height: 130px;
+  height: 100px;
   background-color: #f5f5f5;
-}
+} */
  
 footer a[href^="mailto:"]	{
   background: url(../gifs/email.gif) no-repeat left center;
@@ -143,6 +143,13 @@ footer a	{
 	
 	#shift2	{		
 	  text-align: left;
+	}
+
+	.footer {
+	  margin-top: 20px;
+	  width: 100%;
+	  height: 150px;
+	  background-color: #f5f5f5;
 	}	
 }
 
@@ -164,8 +171,14 @@ footer a	{
 	
 	#shift3	{
 	  visibility: hidden;	
-	}	
-}
+	}
+
+	.footer {
+	  margin-top: 20px;
+	  width: 100%;
+	  height: 120px;
+	  background-color: #f5f5f5;  
+	}
 
 /* Medium Screens  */
 @media screen and (min-width: 768.1px) {
@@ -189,6 +202,11 @@ footer a	{
 	.container	{
 	width: 750px;
 	}
+	.footer {
+	  margin-top: 20px;
+	  width: 100%;
+	  height: 100px;
+	  background-color: #f5f5f5;
 }
 
 /* Large Screens */
@@ -220,13 +238,24 @@ footer a	{
 	  margin-left: 10%;
 	  margin-right: 10%;
     }
+	.footer {
+	  margin-top: 20px;
+	  width: 100%;
+	  height: 100px;
+	  background-color: #f5f5f5;
 }
 
 /* Extra Large Screens */
 @media screen and (min-width: 1200.1px) {	
 	.container	{
-	width: 992px;	
+	 width: 992px;	
 	}	
+	
+	.footer {
+	  margin-top: 20px;
+	  width: 100%;
+	  height: 100px;
+	  background-color: #f5f5f5;
 }
 
 
