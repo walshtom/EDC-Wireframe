@@ -15,8 +15,7 @@
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 	<!-- Custom styles -->
-	<link href="css/styles.css" rel="stylesheet">	
-	<link href="css/signin.css" rel="stylesheet">		
+	<link href="css/styles.css" rel="stylesheet">		
 </head>
 <body>
 	<div id="page">
@@ -56,7 +55,7 @@
 				<li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Membership<span class="caret"></span></a>
 				  <ul class="dropdown-menu">
-					<li><a href="signin.html">Member Login</a></li>
+					<li><a href="login.html">Member Login</a></li>
 					<li><a href="docs/Membership_Application_2016.pdf">Membership Application</a></li>
 					<li><a href="docs/GeneralClubWaiver.pdf">Club Liability Waiver</a></li>
 				  </ul>
@@ -103,33 +102,18 @@
 		</header>
 	
 	<!-- End of navbar -->
-	
-<!-- Login Form -->
-<div class="container moved_down">
 
-  <form class="form-signin">
-	<h2 class="form-signin-heading">Please sign in</h2>
-	<label for="inputEmail" class="sr-only">Email address</label>
-	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-	<label for="inputPassword" class="sr-only">Password</label>
-	<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-	<div class="checkbox">
-	  <label>
-		<input type="checkbox" value="remember-me"> Remember me
-	  </label>
-	</div>
-	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  </form>
+  
 
-</div> 
-<!-- End of Login Form -->	
-	
 
-	<footer class="footer footer_custom">
+	<footer class="footer">
 	  <div class="container">
-		<a href="#">Privacy Policy</a>
+		<button type="button" class="btn btn-default" data-toggle="popover"
+		title="Explorers Dive Club Privacy Policy"
+		data-content="We respect your privacy and the club will never share your Email address with any third party.">Privacy Policy</button>		
 		<p class="text-muted">Copyright &copy; 2016 Explorers Dive Club  All rights reserved.</p>
-		<p>For suggestions or additions to this site please contact: &nbsp;&nbsp;<a href="mailto:webmaster@explorersdiveclub.org">webmaster@explorersdiveclub.org</a></p>
+		<p>For suggestions for this site please contact: &nbsp;&nbsp;<a href="mailto:webmaster@explorersdiveclub.org">webmaster@explorersdiveclub.org</a></p>
+		
 	  </div>
 	</footer>
 
@@ -142,6 +126,13 @@
 		<script src="js/script.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
+		<script>
+		$(document).ready(function() {
+		  $(function () {
+		    $('[data-toggle="popover"]').popover();
+		  });
+		});
+		</script>
 	</div> <!-- end of page -->
 </body>
 </html>
