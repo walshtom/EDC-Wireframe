@@ -205,7 +205,14 @@
 
 	<footer class="footer">
 	  <div class="container">
-		<p><a href="#">Privacy Policy</a></p>
+		<button type="button" class="btn btn-default" data-toggle="popover"
+		title="Explorers Dive Club Privacy Policy"
+		data-content="We respect your privacy and the club will never share your Email address with any third party.">Privacy Policy</button>
+		
+		
+		
+		
+		
 		<p class="text-muted">Copyright &copy; 2016 Explorers Dive Club  All rights reserved.</p>
 		<p>For suggestions for this site please contact: &nbsp;&nbsp;<a href="mailto:webmaster@explorersdiveclub.org">webmaster@explorersdiveclub.org</a></p>
 		
@@ -221,6 +228,13 @@
 		<script src="js/script.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
+		<script>
+		$(document).ready(function() {
+		  $(function () {
+		    $('[data-toggle="popover"]').popover();
+		  });
+		});
+		</script>
 	</div> <!-- end of page -->
 </body>
 </html>
