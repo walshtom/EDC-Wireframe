@@ -102,65 +102,35 @@
 		</header>
 	
 	<!-- End of navbar -->
-
+	
+	
 <div class="container">
-	<table class="table">
-	  <caption>Explorers Dive Club Officers</caption>
-	  <thead>
-		<tr>
-		  <th>Title</th>
-		  <th>Name</th>
-		</tr>
-	  </thead>
-	  <tbody>
-		<tr>
-		  <td>President</td>
-		  <td>Karen Taylor</td>
-		</tr>
-		<tr>
-		  <td>Vice President</td>
-		  <td>Tom Montrone</td>
-		</tr>
-		<tr>
-		  <td>Newsletter</td>
-		  <td>Keith Bellamy</td>
-		</tr>
-		<tr>
-		  <td>Secretary</td>
-		  <td>Joanne Butler</td>
-		</tr>	
-		<tr>
-		  <td>Treasurer</td>
-		  <td>Lisa Vesuvio</td>
-		</tr>	
-		<tr>
-		  <td>Webmaster</td>
-		  <td>Tom Walsh</td>
-		</tr>		
-	  </tbody>
-	  <tfoot>
-		<tr>
-		  <td colspan="4"></td>
-		</tr>
-	  </tfoot>
-	</table>
+	<h2>The Explorers Dive Club Newsletter</h2>
+
+	<p>Our newsletter, <strong>The Surface Interval</strong>, is currently published monthly from April to October. 
+	It is available to club members and non-members alike in Adobe Acrobat format. 
+	Issues may be downloaded from this archive and you may also sign up below to have the newsletter Emailed to you.</p>
+
+	<p>Most Recent Issue:
+	<a href="#" onClick="launchWindow('newsletters/2015/October2015.pdf')" title="October 2015 Newsletter">
+    October 2015</a></p>
+	
+	<h2>Surface Interval Archives</h2>
+	
+	
+	
+	<p>Coming soon.</p>
+	
+	
+	
+	
+	<br><br><br>
+	<div>
+		<a href="#" title="Click to obtain the free Adobe Acrobat Reader"
+		onClick="window.open('http://www.adobe.com/products/acrobat/readstep.html')">
+		<img src="gifs/Acrobat.gif" border="0" height="31" width="88"></a>
+	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<footer class="footer">
 	  <div class="container">
@@ -188,6 +158,16 @@
 		    $('[data-toggle="popover"]').popover();
 		  });
 		});
+		</script>
+		<script>
+			function launchWindow(url) 
+			{
+				window.open(url, "_blank", "status=yes,resizable=yes,scrollbars=yes,titlebar=yes,menubar=no,top=0,left=0,height=600, width=800");
+			}
+			function launchWindow2(url)
+			{
+				window.open(url, "_blank", "status=no,resizable=no,scrollbars=no,titlebar=no,menubar=no,top=200,left=100,height=200, width=400");
+			}
 		</script>
 	</div> <!-- end of page -->
 </body>
