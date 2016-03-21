@@ -27,7 +27,13 @@ function initialize() {
 		['Dive Seekers', 40.4793843,-74.655694],
 		['Aqua Tech Scuba Center', 39.9424407,-74.9928718],
 		['Atlantic Divers', 39.3993872,-74.5534876],
-		['Atlantic Spear and Scuba', 40.1012683,-74.04447198]
+		['Atlantic Spear and Scuba', 40.1012683,-74.04447198],
+		['Cedar Grove Divers Supply', 40.8501254,-74.23002318],
+		['Dark Water Divers', 40.9065299,-74.26044345],
+		['Dosil’s Scuba Center', 40.43562368,-74.11744952],
+		['East Coast Diving Center', 40.3705452,-74.2773079],
+		['Elite Divers', 40.8723792,-74.52904053],
+		['Kunuku Dive and Travel', 40.668548,-75.158569]
     ];
                         
     // Info Window Content
@@ -70,7 +76,31 @@ function initialize() {
 		['<div class="info_content">' +
         '<h3>Atlantic Spear & Scuba</h3>' +
         '<p>212 Channel Drive<br>Point Pleasant Beach, NJ, 08742<br>Phone: (732)892-5971<br>www.atlanticspearandscuba.com</a></p>' +
-        '</div>']		
+        '</div>'],	
+		['<div class="info_content">' +
+        '<h3>Cedar Grove Divers Supply</h3>' +
+        '<p>492 Pompton Ave (Route 23 South)<br>Cedar Grove, NJ 07009<br>Phone: (973)857-1748<br>www.cedargrovedivers.com</a></p>' +
+        '</div>'],
+		['<div class="info_content">' +
+        '<h3>Dark Water Divers Supply</h3>' +
+        '<p>24 Burgess Place<br>Wayne, NJ 07470<br>Phone: (973)339-7771<br>www.darkwaterdivers.com</a></p>' +
+        '</div>'],
+		['<div class="info_content">' +
+        '<h3>Dosils Scuba Center</h3>' +
+        '<p>261 Route 36 East<br>Middletown, NJ 07748<br>Phone: (732)787-0508<br>www.dosils.com</a></p>' +
+        '</div>'],	
+		['<div class="info_content">' +
+        '<h3>East Coast Diving Center</h3>' +
+        '<p>275 Spring Valley Road<br>Morganville, NJ 07751<br>Phone: (732)591-9374<br>www.eastcoastdivingcenter.com</a></p>' +
+        '</div>'],
+		['<div class="info_content">' +
+        '<h3>Elite Divers</h3>' +
+        '<p>81 Rt.10 East<br>Randolph, N.J. 07869<br>Phone: (973)586-2214<br>www.elitedivers.com</a></p>' +
+        '</div>'],
+		['<div class="info_content">' +
+        '<h3>Kunuku Dive and Travel</h3>' +
+        '<p>327 Third Ave<br>Alpha, NJ 08865<br>www.kunuku.com</a></p>' +
+        '</div>']				
     ];
         
     // Display multiple markers on a map
